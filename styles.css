@@ -23,8 +23,8 @@
   --num:          #8A20F0;
   --num-deep:     #6B17C8;
 
-  --maxw: 1180px;
-  --pad-x: clamp(24px, 6vw, 96px);
+  --maxw: 1400px;
+  --pad-x: clamp(20px, 5vw, 64px);
 
   --font-display: "Inter", "Helvetica Neue", Arial, sans-serif;
   --font-body:    "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -51,9 +51,14 @@ img, svg { display: block; max-width: 100%; }
 
 .wrap {
   max-width: var(--maxw);
-  margin: 0 auto;
+  margin: 0;
   padding-left: var(--pad-x);
   padding-right: var(--pad-x);
+}
+.topbar .wrap,
+.footer .wrap,
+.section--clients .wrap {
+  margin: 0;
 }
 
 /* ---------- top bar ---------- */
